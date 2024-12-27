@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Список студентів</h1>
+    <form id="student-form">
+        <input type="text" name="firstName" placeholder="Ім'я" required>
+        <input type="text" name="lastName" placeholder="Прізвище" required>
+        <input type="number" name="age" placeholder="Вік" min="16" required>
+        <input type="number" name="course" placeholder="Курс" min="1" max="6" required>
+        <input type="text" name="faculty" placeholder="Факультет" required>
+        <input type="text" name="subjects" placeholder="Курси (через кому)" required>
+        <button type="submit">Додати</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Пошук за прізвищем або курсом">
+    <table id="students-table">
+        <thead>
+            <tr>
+                <th>Ім'я</th>
+                <th>Прізвище</th>
+                <th>Вік</th>
+                <th>Курс</th>
+                <th>Факультет</th>
+                <th>Курси</th>
+                <th>Дії</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="node.js"></script>
+</body>
+</html>
